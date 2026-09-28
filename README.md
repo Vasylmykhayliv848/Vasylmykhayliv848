@@ -17,7 +17,7 @@ I learn defensive security by building a real tool: a PowerShell platform that a
 
 ## Main Project
 
-### [AI Audit Center](https://github.com/Vasylmykhayliv848/AIAudit)
+### [AI Audit Center](https://github.com/Vasylmykhayliv848/ai-audit-center)
 
 A Windows security auditing and security automation platform built with PowerShell. It covers detection, risk analysis, evidence, controlled response, verification, rollback, recovery and human-controlled automation.
 
@@ -35,6 +35,7 @@ Detect → Analyze → Correlate → Risk → Policy → Decision → Evidence
 | Rollback | Three-way state check (previous / expected / actual) |
 | Self-monitoring | Watchdog (implemented) · Self-Test (in development) |
 | Status | Active development on a personal machine. Not a production product |
+| Source | Private; showcase repo is public, code available to employers on request |
 
 ## Security Focus
 
@@ -67,7 +68,7 @@ Detect → Analyze → Correlate → Risk → Policy → Decision → Evidence
 
 | Project | Description | Status |
 |---|---|---|
-| [AI Audit Center](https://github.com/Vasylmykhayliv848/AIAudit) | Windows security auditing and human-controlled security automation (PowerShell) | Active development |
+| [AI Audit Center](https://github.com/Vasylmykhayliv848/ai-audit-center) | Windows security auditing and human-controlled security automation (PowerShell) | Active development |
 
 ## Learning
 
@@ -78,7 +79,7 @@ Detect → Analyze → Correlate → Risk → Policy → Decision → Evidence
 
 ## Contact
 
+- LinkedIn: [vasyl-mykhayliv](https://www.linkedin.com/in/vasyl-mykhayliv-b7bbba415)
 - GitHub: [@Vasylmykhayliv848](https://github.com/Vasylmykhayliv848)
-- LinkedIn: coming soon
 
 <sub>Everything above describes learning projects. I don't claim professional experience, certifications or production deployments.</sub>
