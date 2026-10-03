@@ -21,19 +21,23 @@ I learn defensive security by building a real tool: a PowerShell platform that a
 
 A Windows security auditing and security automation platform built with PowerShell. It covers detection, risk analysis, evidence, controlled response, verification, rollback, recovery and human-controlled automation.
 
+**Autonomous Security Loop** - a fully integrated defensive security automation pipeline:
+
 ```text
-Detect → Analyze → Correlate → Risk → Policy → Decision → Evidence
-       → Response → Verify → Rollback / Recovery → Human Review
+Detect → Correlate → Assess Risk → Policy → Decide → Respond → Verify → Recover → Resolve
 ```
 
 | What | Detail |
 |---|---|
 | Analyzers | 71 Windows security modules (Defender, Firewall, Services, Scheduled Tasks, Persistence, Event Logs …) |
-| Safety model | `SAFE_AUTO` · `APPROVAL_REQUIRED` · `BLOCKED`, default deny, tighten-only policy |
+| Safety model | 44 action types: 13 `SAFE_AUTO` · 15 `APPROVAL_REQUIRED` · 16 `BLOCKED`; default deny, tighten-only policy |
+| Human approval | Keyboard-only, one incident / action / target, time-limited, re-checked at execution |
 | Evidence | Integrity hashes, chain of custody, hash-chained journals |
 | Verification | Expected vs actual state. Action success ≠ security resolved |
 | Rollback | Three-way state check (previous / expected / actual) |
-| Self-monitoring | Watchdog (implemented) · Self-Test (in development) |
+| Self-monitoring | Watchdog and Self-Test engines: detect and report, never repair |
+| Integration | 20 loop states proven against the orchestrator's 27-state machine; 14 security boundaries checked every run; 20/20 simulated scenarios incl. rollback → recovery |
+| Honest metrics | No real remediation has run through the loop yet, so response automation is reported as `NOT_MEASURED` |
 | Status | Active development on a personal machine. Not a production product |
 | Source | Private; showcase repo is public, code available to employers on request |
 
@@ -60,8 +64,8 @@ Detect → Analyze → Correlate → Risk → Policy → Decision → Evidence
 
 ## Current Focus
 
-- Finishing the **Self-Test Engine** for AI Audit Center
-- Designing a local **Human Control Center** for approvals
+- Running the first real, human-approved remediations through the **Autonomous Security Loop**
+- Read-only views of the loop for the dashboard and API
 - Improving English (target B2) and learning more Windows internals
 
 ## Projects
